@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!-- Informa ao computador que o tipo de documento é o HTML-->
+<html lang="pt-br"> <!-- Informa ao site que o idioma dele é o Português-->
+<head> <!-- Cabeça do Site -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Aqui é onde conecta o CSS ao html, "style.css" é o nome do nosso arquivo do Cascading Style Sheet-->
+    <title>Pixar</title> <!-- Aqui informa o título-->
+</head>
+<body> <!-- Aqui é o corpo do Site, ou seja, todo o conteúdo que for aparecer no Site -->
+<header> <!-- Cabeçalho do site -->
+    <img id="logo" src="./Imagens/LOGO_PIXAR-removebg-preview.png" alt="Logo da Pixar em png"> <!-- Aqui é onde podemos colocar uma imagem no nosso site. id significa Identificador, ou seja, nesse caso o nosso id se chama "logo" já no SRC, significa SOURCE, ou seja significa o caminho -->
+    <nav> <!-- Ele serve para criar uma seção de navegação -->
+        <a href="Inicio.html">Página Inicial</a>  <!--a tag "a" serve para criar uma âncora do site e já o "href" serve para indicar o endereço da âncora-->
+        <a href="Personagens.html">Personagens da Pixar</a> <!--a tag "a" serve para criar uma âncora do site e já o "href" serve para indicar o endereço da âncora-->
+        <a href="Filmes.html">Filmes da Pixar</a> <!--a tag "a" serve para criar uma âncora do site e já o "href" serve para indicar o endereço da âncora-->
+    </nav> <!--Fechamento da seção do nav-->
+
+</header> <!--Fechamento do Cabeçalho-->
+
+<main> <!--Aqui é o conteúdo principal do site -->
+  
+    <section id="banner">
+        <p class="paragrafo">Pixar Animation Studios, é um estúdio americano de animação por computador com sede em Emeryville, Califórnia, uma subsidiária da Disney Studios Content de propriedade da The Walt Disney Company.</p>
+    </section>
+
+    <!-- Títulos de seções principais ganham mais destaque fora do container flex se você quiser alinhar à esquerda, ou dentro se quiser centralizar -->
+    <h2 style="text-align: center; margin-top: 30px; font-family: sans-serif;">Personagens Principais</h2>
+    <section id="personagens">
+        <article class="card">
+            <img src="./Imagens/WALL E Ver.jpg" alt="Wall-E">
+            <h3>Wall-E</h3>
+        </article>
+        
+        <article class="card">
+            <img src="./Imagens/Carl Fredricksen.png" alt="Carl Fredricksen">
+            <h3>Carl Fredricksen Up - Altas Aventuras</h3>
+        </article>
+        
+        <article class="card">
+            <img src="./Imagens/Alfredo Linguini.webp" alt="Alfredo Linguini">
+            <h3>Alfredo Linguini - Ratatouille</h3>
+        </article>
+    </section>
+
+    <h2 style="text-align: center; margin-top: 30px; font-family: sans-serif;">Filmes Favoritos</h2>
+    <section id="filmes-favoritos"> <!-- Corrigido: sem espaços no ID -->
+        <!-- Corrigido: Mudamos de id para class para poder repetir o elemento na página -->
+        <article class="card-filmes">
+            <img src="" alt="">
+            <h3>Monstros SA</h3>
+        </article>
+
+        <article class="card-filmes">
+            <img src="" alt="">
+            <h3>DivertidaMente2</h3>
+        </article>
+    </section>
+</main>
+    <footer>
+        <p>&copy; Todos os direitos reservados - Melissa Freitas</p>
+    </footer>
+</body>
+</html>

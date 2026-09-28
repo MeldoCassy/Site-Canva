@@ -1,0 +1,131 @@
+*{ /* O "*" serve para selecionar todos os elementos da página*/
+    margin: 0%; /* Margin é o espaço externo */
+    padding: 0%; /* Padding é o espaço interno */
+    box-sizing: border-box; /* O tamanho da caixa e o "border-box" serve para fazer com que o width e height de um elemento incluam o padding e a border */ 
+}
+
+header /* CABEÇALHO */{
+    background-color: #77c0e3; /* Coloca a cor de fundo do Site */
+    height: 150px; /* Significa "altura" ou seja, você está dizendo para o CSS que você quer uma altura de 150 Pixels*/ 
+    text-align: center; /* Text-Align serve para definir como o texto fica alinhado*/
+}
+
+a /* ÂNCORA */{ 
+    margin-top: 5%; 
+    background-color: #acdc9c;
+    padding: 1%;
+    border-radius: 25px;
+    text-decoration: none; /* Opcional: Remove o sublinhado azul padrão dos links */
+    color: black;
+}
+
+#logo /* LOGO */{
+    width: 200px;
+}
+
+.up{
+    width: 100%;
+    height: 800px;
+}
+
+#banner{
+    width: 100%;
+    height: 400px;
+    background-color: mediumaquamarine;
+    background-image: url(./Imagens/up.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragrafo{
+    padding: 20px;
+    width: 850px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Ajuda a ler o texto por cima da imagem do Up */
+}
+
+/* Regra geral para imagens soltas na página */
+img{
+    width: 100px;
+}
+
+/* CONTAINER DOS PERSONAGENS: Alinha os cards um ao lado do outro e centraliza na tela */
+#personagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 20px 40px 20px;
+}
+
+/* O CARD DOS PERSONAGENS: Agora usa Flexbox para alinhar tudo por dentro */
+.card{
+    text-align: center;
+    width: 400px;
+    height: 250px;
+    background-color: #77c0e3;
+    color: aliceblue;
+    border-radius: 30px;
+    padding: 20px;
+    
+    /* Ativa o alinhamento em coluna e centraliza o conteúdo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Espaço fixo perfeito entre a imagem e o texto */
+}
+
+/* AS IMAGENS DENTRO DOS CARDS: Resolve o problema do desalinhamento */
+.card img {
+    width: auto;
+    height: 130px; /* Garante que todas tenham exatamente a mesma altura */
+    object-fit: contain; /* Ajusta a imagem perfeitamente sem esticar ou cortar */
+}
+
+/* CONTAINER DE FILMES FAVORITOS */
+#filmes-favoritos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 20px 40px 20px;
+}
+
+/* O CARD DOS FILMES: Atualizado de ID para Classe (.) */
+.card-filmes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 450px;
+    height: 250px;
+    background-color: #acdc9c;
+    border-radius: 30px;
+    text-align: center;
+    color: #222; /* Cor escura no texto para dar leitura no fundo verde claro */
+    padding: 20px;
+}
+
+/* Prepara a configuração das futuras imagens dos seus filmes */
+.card-filmes img {
+    width: auto;
+    height: 130px;
+    object-fit: contain;
+}
+
+footer{
+    padding-top:20px;
+    height: 90px;
+    background-color: rebeccapurple;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}

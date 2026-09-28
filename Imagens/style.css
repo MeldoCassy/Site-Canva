@@ -1,0 +1,28 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header /* CABEÇALHO */{
+    background-color: #77c0e3;
+    height: 150px;
+    text-align: center;
+}
+
+a /* ÂNCORA */{
+    margin-top: 5%;
+    background-color: #acdc9c;
+    padding: 1%;
+    border-radius: 25px;
+}
+
+#logo /* LOGO */{
+    width: 200px;
+}
+
+div{
+    height: 800px;
+    background-image: url(./UP\ casa\ flutuando.jpg);
+}
+
