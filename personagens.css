@@ -1,0 +1,76 @@
+*{ /* O "*" serve para selecionar todos os elementos da página*/
+    margin: 0%; /* Margin é o espaço externo */
+    padding: 0%; /* Padding é o espaço interno */
+    box-sizing: border-box; /* O tamanho da caixa e o "border-box" serve para fazer com que o width e height de um elemento incluam o padding e a border */ 
+}
+
+#Container /* CABEÇALHO */{
+    display: flex;
+    background-color: #81c6e6; /* Coloca a cor de fundo do Site */
+    height: 150px; /* Significa "altura" ou seja, você está dizendo para o CSS que você quer uma altura de 150 Pixels*/ 
+    text-align: center; /* Text-Align serve para definir como o texto fica alinhado*/
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#Filmes{
+    padding: 2%;
+    background-color: #f9d345;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#logo{
+    margin-left: 43%;
+    width: 150px;
+}
+
+nav{
+    display: flex;
+    margin-left: 33%;
+}
+
+a{
+    color: #cb6ce6;
+    padding: 2%;
+    
+}
+
+.Secao{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+#PersonagensPrincipais{
+    text-align: center;
+}
+
+.carl{
+    display: flex;
+    background-color: #b3cc74;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.personagens{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    object-fit: cover;
+}
+
+h3{
+    font-size: medium;
+}
+img{
+    width: 200px;
+}
+
+footer{
+    background-color: rebeccapurple;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
